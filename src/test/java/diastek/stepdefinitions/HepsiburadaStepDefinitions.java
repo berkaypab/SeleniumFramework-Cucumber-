@@ -24,7 +24,7 @@ public class HepsiburadaStepDefinitions {
 
     public HepsiburadaStepDefinitions(TestContext context) {
         this.context = context;
-        homePage = new HomePage(context.driver);
+        homePage = new HomePage(context.getDriver());
     }
 
     @Given("I navigate to Hepsiburada homepage")
@@ -36,7 +36,7 @@ public class HepsiburadaStepDefinitions {
     @When("I navigate to AllCategories and Electronic category")
     public void iNavigateToCategoryPath() throws InterruptedException {
         homePage.navigateThroughCategories();
-        tabletPage = new ProductPage(context.driver);
+        tabletPage = new ProductPage(context.getDriver());
     }
 
     @And("I filter by brand Apple and screen size 13,3 inç")

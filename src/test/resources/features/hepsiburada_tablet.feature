@@ -15,10 +15,14 @@ Feature: Hepsiburada Tablet Purchase
     And The price in the cart should match the price on the product details page
 
 
-  #@bvt @sanity
-  #Scenario: Test for parallel execution
-  #  Given I navigate to Hepsiburada homepage
+  @bvt @sanity
+  Scenario: Test for parallel execution
+    Given I navigate to Hepsiburada homepage
 
-  #@sanity @bvt
-  #Scenario: Test for parallel execution
-  #  Given I navigate to Hepsiburada homepage
+  @sanity @bvt
+  Scenario: Test for parallel execution
+    Given I navigate to Hepsiburada homepage
+
+  @sanity @bvt
+  Scenario: Test for parallel execution
+    Given I navigate to Hepsiburada homepage

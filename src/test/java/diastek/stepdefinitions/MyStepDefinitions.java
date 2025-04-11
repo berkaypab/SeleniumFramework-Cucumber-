@@ -9,6 +9,6 @@ public class MyStepDefinitions {
 
 
     public MyStepDefinitions(TestContext context){
-        driver = context.driver;
+        driver = context.getDriver();
     }
 }

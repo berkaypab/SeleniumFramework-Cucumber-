@@ -57,6 +57,7 @@ public class JavaScriptHelper {
             scrollToElementCenter(element);
         }
     }
+
     void scrollToElementIfNotInView(WebElement container, WebElement target) {
         if (!isElementInViewport(target)) {
             scrollToElementWithinContainer(container, target);
